@@ -11,7 +11,7 @@ if ( i % 3 == 0 && i % 5 == 0) {
     const BoxFB = "FizzBuzz"
     const boxFizzBuzz = document.createElement('div');
 // | aggiungiamo delle classi
-    
+    boxFizzBuzz.classList.add('box','col-5');
 //# aggiungiamo il contenuto nel div
     boxFizzBuzz.innerHTML = BoxFB;
 //° append
@@ -22,7 +22,7 @@ if ( i % 3 == 0 && i % 5 == 0) {
 
     const fizz = "Fizz";
     const fizzBox = document.createElement("div");
-    
+    fizzBox.classList.add("box", 'col-3');
     fizzBox.innerHTML = fizz;
     consoleRow.append(fizzBox);
     console.log(fizz);
@@ -31,7 +31,7 @@ if ( i % 3 == 0 && i % 5 == 0) {
 
     const buzz = "Buzz";
     const buzzBox = document.createElement("div");
-    
+    buzzBox.classList.add("box", 'col-4');
     buzzBox.innerHTML = buzz;
     consoleRow.append(buzzBox);
     console.log(buzz);
@@ -39,7 +39,7 @@ if ( i % 3 == 0 && i % 5 == 0) {
 } else {
 
     const box = document.createElement("div");
-    
+    box.classList.add("box", "col-2");
     box.innerHTML = i;
     consoleRow.append(box);
     console.log(i);
